@@ -1,1 +1,27 @@
-updated python
+
+# To upload the local data to remote github account
+echo "readme" >> README.md
+git init
+git status 
+git add .
+git commit -m "first commit" -m "first description "
+git branch -m master
+git remote add origin https://github.com/example
+git push -u origin master
+
+## To clone the github remote data to local machine 
+git clone https://github.com/example
+git add .
+git commit -m "first commit" -m "first description "
+git branch -m master
+git remote add origin https://github.com/example
+git push -u origin master
+
+## To create a new branch 
+git checkout -b name-of-branch                               (without double quotes)
+git checkout name-of-branch (for switch between master and name-of-branch)
+
+
+## To localaly access merged account use pull request 
+git pull -u origin master(should be in master branch )
+
