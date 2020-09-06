@@ -1,5 +1,4 @@
-
-# To upload the local data to remote github account
+## To upload the local data to remote github account #############################################################################
 echo "readme" >> README.md
 git init
 git status 
@@ -8,22 +7,26 @@ git commit -m "first commit" -m "first description "
 git branch -m master
 git remote add origin https://github.com/example
 git push -u origin master
-
-## To clone the github remote data to local machine 
+## To clone the github remote data to local machine  #############################################################################
 git clone https://github.com/example
 git add .
 git commit -m "first commit" -m "first description "
 git branch -m master
 git remote add origin https://github.com/example
 git push -u origin master
-
-## To create a new branch 
+## To create a new branch  #############################################################################
 git branch (to check the branches )
 git checkout -b name-of-branch   (without double quotes)
 git checkout name-of-branch (for switch between master and name-of-branch)
 git branch -d name-of the-branch (to delete the branch )
-
-
 ## To localaly access merged account use pull request 
 git pull -u origin master(should be in master branch )
+## if conflict  ###########################################################################
+git merge master (it will give error fix conflicts )
+git diff (shows the difference)
+we have to manually solve the error 
+git commit 
+git push 
+git pull 
+
 
