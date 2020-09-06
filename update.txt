@@ -18,8 +18,10 @@ git remote add origin https://github.com/example
 git push -u origin master
 
 ## To create a new branch 
-git checkout -b name-of-branch                               (without double quotes)
+git branch (to check the branches )
+git checkout -b name-of-branch   (without double quotes)
 git checkout name-of-branch (for switch between master and name-of-branch)
+git branch -d name-of the-branch (to delete the branch )
 
 
 ## To localaly access merged account use pull request 
